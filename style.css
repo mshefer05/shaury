@@ -1,0 +1,285 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: ;
+}
+
+.header {
+    position: relative;
+     overflow: hidden; 
+}
+
+
+
+.black-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Spans entire width */
+    height: 10%; /* Spans entire height */
+    background-color: black; /* Black background color */
+    opacity: 1; /* Adjust opacity if needed */
+    z-index: -1; /* Place it behind other elements */
+}
+
+
+.container {
+    max-width: 1200px; /* Adjust this value as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add some space around the content */
+    border: 1px solid #ccc; /* Add a border for visualization */
+    background-color: #CBD6E2; /* Set a background color for the container */
+}
+
+
+
+
+.box {
+     display: flex; /* Use Flexbox */
+    
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+.boxP2 {
+     display: flex; /* Use Flexbox */
+    
+    padding: 10px;
+    border: 10px solid #ddd;
+    margin: 5px;
+    background-color: #fff;
+}
+
+.c h1{
+  margin-top: 30px;
+  font-size: 20px;
+
+}
+
+.c {
+  @margin-top: 20px;
+  flex-grow: 1;
+}
+
+.c p {
+  margin: 0;
+  font-size: 18px;
+  color: #555;
+}
+
+.background-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('a.jpg'); /* Set the background image */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    animation: backgroundEffect 2s infinite alternate; /* Apply animation */
+}
+
+@keyframes backgroundEffect {
+    0% {
+        filter: grayscale(100%);
+    }
+    50% {
+        filter: blur(5px);
+    }
+    100% {
+        filter: sepia(100%);
+    }
+}
+
+
+.myName {
+    position: absolute;
+    top: 5%; /* Adjust vertically */
+    right: 60%; /* Adjust horizontally */
+    transform: translate(-50%, -50%);
+    display: flex;
+    
+}
+
+
+
+/* Rest of your existing CSS */
+
+.social-icons {
+    position: absolute;
+    z-index: 3;
+    top: 5%; /* Adjust vertically */
+    left: 90%; /* Adjust horizontally */
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px; /* Adjust spacing between icons */
+}
+
+.social-icons a {
+    display: block;
+}
+
+.social-icons img {
+    width: 40px; /* Adjust icon size */
+    height: 40px;
+}
+
+
+.prof2 {
+  position: relative;
+  text-align: center;
+  padding-top: 100px; /* Adjust as needed */
+}
+
+
+.prof3 {
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+   background-color: pink;
+}
+
+.profile {
+  position: relative;
+  text-align: center;
+  padding-top: 100px; /* Adjust as needed */
+}
+
+
+
+.profile-2 {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.profile-picture {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+  margin-top: 20px;
+}
+   
+
+
+.c1 {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.Home {
+  position: absolute;
+  z-index: 2; 
+  top: 100px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  padding: 10px 80px;
+  font-size: 16px;
+}
+
+
+
+
+
+
+.About {
+  position: absolute;
+  z-index: 2; 
+  top: 100px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  padding: 10px 80px;
+  font-size: 16px;
+}
+
+.contact {
+  position: absolute;
+  z-index: 1;
+  top: 160px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  padding: 10px 73px;
+  font-size: 16px;
+}
+
+
+
+
+
+.description h1 {
+  margin: 5px 0;
+  font-size: 24px;
+}
+
+.description p {
+  margin: 0;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Style the main content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-item {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: #f0f0f0;
+}
